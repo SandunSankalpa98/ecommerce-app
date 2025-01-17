@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <x-header />
+  
     <x-carousel />
 
     <main class="container mx-auto mt-6 py-5">

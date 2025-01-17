@@ -15,11 +15,12 @@
 </div>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        new Splide('#carousel', {
-            type   : 'loop',
+        const splide = new Splite('#carousel', {
+            type: 'loop',
             perPage: 1,
             autoplay: true,
             interval: 3000,
-        }).mount();
+        });
+        splide.mount();
     });
 </script>
