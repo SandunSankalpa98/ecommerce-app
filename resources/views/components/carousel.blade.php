@@ -13,14 +13,3 @@
         </ul>
     </div>
 </div>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const splide = new Splite('#carousel', {
-            type: 'loop',
-            perPage: 1,
-            autoplay: true,
-            interval: 3000,
-        });
-        splide.mount();
-    });
-</script>

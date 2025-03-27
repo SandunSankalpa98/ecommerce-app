@@ -22,7 +22,8 @@
         <br>
         <br>
 
-        <x-productlist />
+
+        <x-productlist :products="$products"/>
     </main>
 
     <x-footer />

@@ -3,7 +3,7 @@
     <h2 class="text-3xl sm:text-4xl text-center mt-4 mb-6">Our Products</h2>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        @php
+        {{-- @php
             $products = [
                 // Example Product List
                 [
@@ -188,13 +188,13 @@
                 ],
                 // Add more products here...
             ];
-        @endphp
+        @endphp --}}
 
         @foreach ($products as $product)
         <div class="group bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition duration-300 ease-in-out">
             <!-- Product Image with Zoom Effect -->
             <div class="relative overflow-hidden">
-                <a href="/productdDetails"><img src="{{ asset('images/products/'.$product['image']) }}" alt="{{ $product['product_name'] }}"
+                <a href="/productdDetails"><img src="{{ asset('images/products/'.$product->primaryImage['image_url']) }}" alt="{{ $product['product_name'] }}"
                     class="w-full h-100 object-cover group-hover:scale-110 transition-transform duration-300 ease-in-out"></a>
             </div>
             
